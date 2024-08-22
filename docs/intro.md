@@ -377,7 +377,50 @@ Redmine es una herramienta para la gestión de proyectos, que con sus diversas f
 - Notion
 - Basecamp
 
-##
-## 
-## 
+## Instalacion  de Docusaurus.
+Instala lo siguiente en tu portatil:
+- Node.js [Visita Node.js](https://nodejs.org/en)
+- Gitbash [Visita Git](https://git-scm.com/download/win)
+- Nssm  [Visita Nssm](https://nssm.cc/download)
+
+
+**NOTA: DESCARGA LAS VERSIONES MAS RECIENTES PARA EVITAR POSIBLES FALLAS, REVISAR NODE.JS SI EJECUTA SIN INSTALARLO EN EL PATH, EN CASO DE QUE NO, INSTALA NODE EN EL PATH (ADD PATH)**
+
+- Abre tu terminal y ejecuta el siguiente comando :
+npx create-docusaurus@latest nombre_website classic
+
+**Nota: cambia npx por npm en caso de error, nombre_website es un ejemplo y utiliza el nombre que desees,classic usalo por defecto**
+
+- Navega hasta el directorio del proyecto.
+- Inicia el servidor de desarrollo con *npm run start*, esto abrira tu sitio en el navegador en *http://localhost:3000.* para que funcione es necesario tener node_modules, donde se encuentra el resto de los archivos de docusaurus.
+- Instala las dependencias que hagan falta, en caso de que no inicie.
+-Abre visual studio code y haz las modificaciones del sitio con Markdown y Javascript.
+## NSSM
+Una vez descargado *nssm*, el ejecutable pasalo a C:\Windows\System32.
+Abre el cmd con permisos de administrador y ejecuta el siguiente comando:nssm install nombre-del-servicio.
+Abrira una venta como esta:
+
+ ![Descripción de la imagen](/presentacion_Capnet/nssm.png)
+ - Path: buscas la direccion del ejecutable de node.js (node.exe).
+ - Startup-directory: copias y pegas la direccion de donde esta la carpeta de Docusaurus.
+ - Argument: puedes dejarlo vacio si lo requieres.
+
+![Descripción de la imagen](/presentacion_Capnet/I-O.png)
+
+Creas una carpeta en el docusaurus, como log y dentro de ella le colocas 2 .txt, una como error y la otra como output.Despues las buscas e insertas en su lugar especificado.
+
+ *Nota: esto sirve para mostrar los errores, ya que cuando quieres ejecutar el servicio y la ejecucion no es satisfactoria solo aparece como pausado o te muestra una advertencia en SERVICIOS, hasta que te direccionas al error.txt ahi encontraras los errores.*
+
+Presiona "windows + R" luego te diriges a  *services.msc*, buscas tu servicio y checas que este en ejecucion, y en el cmd escribes el siguiente comando *nssm status nombre-del-servicio*, tiene que que estar en *"SERVICE-RUNNING"*.
+## Subir repositorio a GIT. 
+Sigue estos pequeños pasos:
+- Barra lateral izquierda busca *Source control* 
+- *Changes* btn(+) stage all changes
+- *features* (depende el proyecto)
+- *NONE* (depende el proyecto)
+- *:sparkless* (depende el proyecto)  
+- *Añade una pequeña descripción* (depende la proyecto)
+- *Añade descripción* (depende la proyecto)
+- *Enter* para confirmar y *Scape* para cancelar
+
 ##
