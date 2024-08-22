@@ -416,6 +416,7 @@ Presiona "windows + R" luego te diriges a  *services.msc*, buscas tu servicio y 
 Sigue estos pequeños pasos:
 - Barra lateral izquierda busca *Source control* 
 - *Changes* btn(+) stage all changes
+- Pestaña *Source Control* btn(O) *conventional commits*
 - *features* (depende el proyecto)
 - *NONE* (depende el proyecto)
 - *:sparkless* (depende el proyecto)  
