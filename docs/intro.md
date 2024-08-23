@@ -392,11 +392,11 @@ npx create-docusaurus@latest nombre_website classic
 **Nota: cambia npx por npm en caso de error, nombre_website es un ejemplo y utiliza el nombre que desees,classic usalo por defecto**
 
 - Navega hasta el directorio del proyecto.
-- Inicia el servidor de desarrollo con *npm run start*, esto abrira tu sitio en el navegador en *http://localhost:3000.* para que funcione es necesario tener node_modules, donde se encuentra el resto de los archivos de docusaurus.
+- Inicia el servidor de desarrollo con *npm run start*, esto abrira tu sitio en el navegador en *http://localhost:3000.* para que funcione es necesario tener node_modules, donde se encuentra el resto de los archivos de docusaurus. En caso de no tenerlas ejecuta el siguiente comando en la terminal de git *nmp install*-
 - Instala las dependencias que hagan falta, en caso de que no inicie.
 -Abre visual studio code y haz las modificaciones del sitio con Markdown y Javascript.
 ## NSSM
-Una vez descargado *nssm*, el ejecutable pasalo a C:\Windows\System32.
+Una vez descargado *nssm*, el ejecutable pasalo a C:\Windows\System32. o dirigite al directorio donde se encuentra.
 Abre el cmd con permisos de administrador y ejecuta el siguiente comando:nssm install nombre-del-servicio.
 Abrira una venta como esta:
 
@@ -411,7 +411,7 @@ Creas una carpeta en el docusaurus, como log y dentro de ella le colocas 2 .txt,
 
  *Nota: esto sirve para mostrar los errores, ya que cuando quieres ejecutar el servicio y la ejecucion no es satisfactoria solo aparece como pausado o te muestra una advertencia en SERVICIOS, hasta que te direccionas al error.txt ahi encontraras los errores.*
 
-Presiona "windows + R" luego te diriges a  *services.msc*, buscas tu servicio y checas que este en ejecucion, y en el cmd escribes el siguiente comando *nssm status nombre-del-servicio*, tiene que que estar en *"SERVICE-RUNNING"*.
+Presiona "windows + R" luego te diriges a  *services.msc*, buscas tu servicio y checas que este en ejecucion, y en el cmd escribes el siguiente comando *nssm status nombre-del-servicio*, tiene que estar en *"SERVICE-RUNNING"*.
 ## Subir repositorio a GIT. 
 Sigue estos pequeños pasos:
 - Barra lateral izquierda busca *Source control* 
@@ -423,5 +423,71 @@ Sigue estos pequeños pasos:
 - *Añade una pequeña descripción* (depende la proyecto)
 - *Añade descripción* (depende la proyecto)
 - *Enter* para confirmar y *Scape* para cancelar
+- *git push* desde la terminal de vsCode
 
+## Conectarte a un servidor por escritorio remoto
+- Abre la conexión a escritorio remoto.
+-Escribe en el buscador de Windows >Conexión a Escritorio remoto.
+- En el campo Equipo (pestaña General), introduce la dirección IP del servidor.
+- Introduce tu nombre de usuario en el campo correspondiente.
+- Opcional: Para guardar los datos de acceso, activa la casilla Guardar información de inicio de sesión.
+- Haz clic en Conectar.
+- En la ventana que se abre, introduce la contraseña.
+- Haz clic en Aceptar.
+- Si te conectas al servidor a través de una conexión a escritorio remoto por primera vez o no has guardado tus datos de conexión, se te pedirá que confirmes tu conexión haciendo clic en Sí.
+
+*Se establece la conexión con el servidor a través del escritorio remoto.*
+## Ejecutar NSSM en el servidor.
+- Abre la terminal con permisos de administrador 
+- dirigete ala carpeta donde se encuentra nssm.exe 
+Ingresa el siguiente comadando:
+ nssm install "nombre_servicio" "direccion_del_service.bat"
+
+## Protocolo TCP
+El Protocolo de Control de Transmisión (Transmission Control Protocol en inglés o TCP) es el método de comunicación de datos por defecto entre distintos dispositivos, a través de una red. Este establece y mantiene una conexión entre el emisor y el receptor durante el proceso de transferencia.
+![Descripción de la imagen](/presentacion_Capnet/tcp.jpg)
+
+## ¿Como funciona el protocolo TCP?
+El protocolo TCP descompone los datos en paquetes y los reenvía a la capa del protocolo de Internet (IP) para garantizar que cada mensaje llegue a su ordenador de destino. Esto ayuda a evitar problemas y a mantener la eficiencia durante el proceso. Los paquetes pueden viajar por varias rutas si la ruta actual está congestionada o no está disponible. Hacerlo así mejorará el rendimiento de la red.
+
+## Protocolo UDP.
+UDP (Protocolo de datagramas de usuario) es un protocolo de comunicaciones alternativo al Protocolo de Control de Transmisión (TCP) utilizado principalmente para establecer conexiones de baja latencia y tolerancia a pérdidas entre aplicaciones en Internet.
+![Descripción de la imagen](/presentacion_Capnet/UDP.jpg)
+
+## ¿Como funciona el protocolo UDP?
+UDP usa el Protocolo de Internet para obtener un datagrama (unidad de datos) de una computadora a otra. UDP funciona encapsulando datos en un paquete UDP y agregando su propia información de encabezado al paquete. Estos datos consisten en los puertos de origen y destino para comunicarse, la longitud del paquete y una checksum. Después de que los paquetes UDP se encapsulan en un paquete de Protocolo de Internet, se envían a sus destinos.
+
+**Nota: A diferencia de TCP, UDP no garantiza que los paquetes lleguen a los destinos correctos.**
+
+## Diferencias entre UDP y TCP.
+- TCP es un protocolo orientado a conexión, mientras que el UDP es un protocolo sin previa conexión.
+- La velocidad del TCP es más lenta mientras que la del UDP es más rápida.
+- TCP usa el protocolo de handshake como SYN, SYN-ACK, ACK mientras que UDP no usa protocolos de handshake.
+- TCP hace la comprobación de errores y también hace la recuperación de errores, por otro lado, UDP hace la comprobación de errores, pero descarta los paquetes erróneos.
+- TCP tiene segmentos de reconocimiento, pero UDP no tiene ningún segmento de reconocimiento.
+- TCP es pesado, y UDP es ligero.
+
+## Como abrir un puerto con firewall.
+- Accede a la configuración del Firewall de Windows. 
+- Abre el menú de inicio y escribe “Firewall de Windows“.
+- Selecciona la opción “Firewall de Windows con seguridad avanzada“.
+- En la ventana del Firewall de Windows, haz clic en “Reglas de entrada” en el panel izquierdo.
+- Crea una nueva regla de entrada.
+- En el Asistente para Nueva Regla de Entrada, selecciona la opción “Puerto” y haz clic en “Siguiente“.
+- Especifica el número de puerto a abrir (TCP o UDP) y selecciona la opción “Siguiente“. (*En este caso se utilizo TCP*)
+- Selecciona la acción que deseas tomar (permitir la conexión o permitir la conexión si está segura) y haz clic en “Siguiente“.
+- Elige las opciones de perfil que se aplicarán a esta regla (dominio, privada o pública) y haz clic en “Siguiente“. (*En este caso se marcaron las 3 opciones*)
+Ingresa un nombre y una descripción opcional para la regla y haz clic en “Finalizar“.
+
+## Conexion de Docusaurus a Nginx.
+- instalar el servicio en el Servidor.
+- buscar en el explorador de archivos la carpeta de ngnix.
+- Abrir la carpeta y buscar nginx.conf y abrirlo con vsCode
+- Hacer las modificaciones necesarias. 
+
+*Nota: Al hacer cambios en nginx tienes que buscar el servicio de nginx en servicios y reiniciar el servicio de nginx. cada que se efectue un cambio reinicarlo.*
+##
+##
+##
+##
 ##
