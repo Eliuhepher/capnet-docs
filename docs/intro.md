@@ -486,7 +486,11 @@ Ingresa un nombre y una descripción opcional para la regla y haz clic en “Fin
 - Hacer las modificaciones necesarias. 
 
 *Nota: Al hacer cambios en nginx tienes que buscar el servicio de nginx en servicios y reiniciar el servicio de nginx. cada que se efectue un cambio reinicarlo.*
-##
+## Migracion de datos en Django y python
+La migración de datos es una parte esencial de cualquier proyecto de desarrollo web, especialmente cuando se trata de bases de datos complejas. En Django, un potente framework web de Python, las migraciones de datos permiten a los desarrolladores hacer cambios en su esquema de base de datos sin perder datos. Esto incluye la creación, modificación o eliminación de tablas o campos. El sistema de migración incorporado en Django maneja este proceso.
+
+
+Las migraciones de datos en Django son scripts de Python que Django genera para hacer cambios en el esquema de su base de datos. Estas migraciones se almacenan en un directorio de migraciones dentro de cada aplicación. Cada archivo de migración corresponde a una operación específica que modifica el esquema de su base de datos.
 ##
 ##
 ##
