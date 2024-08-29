@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
 ---
+# SOPORTE
 
-# INTRODUCCION A SOPORTE 
+## INTRODUCCION A SOPORTE 
 
 ## PATRÓN MVC(MODELO-VISTA-CONTROLADOR).
 - *Modelo (Datos).*
@@ -491,7 +492,66 @@ La migración de datos es una parte esencial de cualquier proyecto de desarrollo
 
 
 Las migraciones de datos en Django son scripts de Python que Django genera para hacer cambios en el esquema de su base de datos. Estas migraciones se almacenan en un directorio de migraciones dentro de cada aplicación. Cada archivo de migración corresponde a una operación específica que modifica el esquema de su base de datos.
-##
+## LISTADO DE PUERTOS POR DEFECTO
+- HTTP: 80
+- HTTPS: 443
+- FTP: 21 (para el control); 20 (para datos)
+- SSH: 22
+- Telnet: 23
+- SMTP (correo electrónico): 25
+- DNS: 53
+- POP3 (correo electrónico): 110
+- IMAP (correo electrónico): 143
+- MySQL: 3306
+- PostgreSQL: 5432
+- MongoDB: 27017
+- Redis: 6379
+- LDAP: 389
+- LDAPS (LDAP sobre SSL): 636
+- RDP (Remote Desktop Protocol): 3389
+- VNC: 5900
+- SNMP (Simple Network Management Protocol): 161
+- NTP (Network Time Protocol): 123
+- Kerberos: 88
+- XMPP (Extensible Messaging and Presence Protocol): 5222
+- SFTP (Secure File Transfer Protocol): 22 (usa el mismo puerto que SSH)
+- HTTP/2: 443 (usualmente en el mismo puerto que HTTPS)
+- Syslog: 514
+- MSSQL (Microsoft SQL Server): 1433
+- Oracle DB: 1521
+- SIP (Session Initiation Protocol): 5060
+- SIPS (SIP sobre TLS): 5061
+- iSCSI: 3260
+- NFS (Network File System): 2049
+- DHCP (Dynamic Host Configuration Protocol): 67 (servidor), 68 (cliente)
+- TFTP (Trivial File Transfer Protocol): 69
+- HTTP/3: 443 (usualmente usa el mismo puerto que HTTPS)
+- Postfix (correo electrónico): 25
+- Dovecot (IMAP/POP3): 143 (IMAP), 110 (POP3)
+- CUPS (Common Unix Printing System): 631
+- Grafana: 3000
+- Jenkins: 8080
+- Docker: 2375 (HTTP), 2376 (HTTPS)
+- Elasticsearch: 9200
+- Kubernetes API: 6443
+- Apache Tomcat: 8080
+- WebSocket: 80 (o 443 para seguridad sobre HTTPS)
+- JIRA: 8080
+- RabbitMQ: 5672
+- Elastic Beanstalk: 8080 (por defecto en algunas configuraciones)
+- Nginx: 80 (HTTP), 443 (HTTPS), 8080 (configurable)
+- Redis Sentinel: 26379
+- Memcached: 11211
+- MongoDB (Replica Set): 27017 (puede variar en configuraciones de replica set)
+- Puppet: 8140
+- SaltStack: 4505, 4506
+- Vault: 8200
+- Consul: 8500
+- Zookeeper: 2181
+- Kibana: 5601
+- SonarQube: 9000
+- Hadoop: 50070 (Nombre del Nodo), 50075 (Datos del Nodo)
+- Elasticsearch (Transport): 9300
 ##
 ##
 ##
