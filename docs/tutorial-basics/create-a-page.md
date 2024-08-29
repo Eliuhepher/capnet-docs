@@ -1,43 +1,16 @@
 ---
 sidebar_position: 1
 ---
-
-# Create a Page
-
-Add **Markdown or React** files to `src/pages` to create a **standalone page**:
-
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
-
-## Create your first React Page
-
-Create a file at `src/pages/my-react-page.js`:
-
-```jsx title="src/pages/my-react-page.js"
-import React from 'react';
-import Layout from '@theme/Layout';
-
-export default function MyReactPage() {
-  return (
-    <Layout>
-      <h1>My React page</h1>
-      <p>This is a React page</p>
-    </Layout>
-  );
-}
-```
-
-A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
-
-## Create your first Markdown Page
-
-Create a file at `src/pages/my-markdown-page.md`:
-
-```mdx title="src/pages/my-markdown-page.md"
-# My Markdown page
-
-This is a Markdown page
-```
-
-A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+# INSTALACION DE CAPITAL-APPS
+##  INSTALACIÓN DE DEPENDENCIAS					
+**Notas: Tome en cuenta las consideraciones a tomar para la instalación de cada dependencia**					
+## Microsoft Build Tools	
+En la instalación marcar los siguientes componentes Windows 10 SDK, SDK de Windows Universal CRT, MSVC v140 - VS2015 C++ Build Tools (v14.00)
+## Microsoft ODBC 17	
+Ejecutar instalador como administrador. En caso de existir un servidor de base de datos por separado, instalarlo en el de base de datos, no en el de aplicaciones.
+## Python
+Marcar casilla de "Agregar al Path" al momento de la instalación. Ejecutar instalador como administrador. Si ya hay una versión previa de Python, favor de informar a desarrollo para saber como proceder, verificar con el comando "python --version" desde CMD
+## Redis	
+Ejecutar instalador como administrador. No cambiar el puerto de instalación por defecto
+## Nginx	
+Descomprimir el archivo .zip y moverlo a la raiz (Disco C:). Cuidar dejar solo un nivel de anidación en la carpeta.
