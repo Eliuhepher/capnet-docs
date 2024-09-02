@@ -15,4 +15,4 @@ listos para ser confirmados. De esta manera, pudes volver al
 proyecto más tarde.
 - *git pull:* Fusiona todos los cambios que se han hecho en el 
 repositorio remoto con el directorio de trabajo local. 
-- *git stash pop:* Se selecciona el último git stash y se muestra de nuevo. Sin embargo, si quieres volver a otro stash, puedes especificarlo. 
+- *git stash pop:* Se selecciona el último git stash y se muestra de nuevo. Sin embargo, si quieres volver a otro stash, puedes especificarlo "git stash pop stash@{1}"(el 1 tiene que estar entre llaves).
