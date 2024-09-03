@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 # ACTUALIZACION DE CAPNET-APPS.
 
@@ -42,3 +42,9 @@ En este caso
 # 2. Cambio en algún elemento de la configuración del repo global
 En este caso
 - Actualización del repo global. “git stash”, “git pull”, “git stash pop”.
+## Listar las dependencias del proyecto.
+- Ejecutar "pip freeze > dependencias_actuales.txt" y se creacara un archivo de texto "dependencias_actuales.txt"
+- Ejecutas "nano dependencias_actuales.txt" y veras una lista de dependencias actuales. 
+## 
+## 
+## 
