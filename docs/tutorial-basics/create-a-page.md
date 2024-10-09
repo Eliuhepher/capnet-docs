@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-# INSTALACION DE CAPNET-APPS.
+# Instalacion de CAPNET-APPS.
 ##  INSTALACIÓN DE DEPENDENCIAS.					
 **Notas: Tome en cuenta las consideraciones a tomar para la instalación de cada dependencia**					
 ## Microsoft Build Tools.	
