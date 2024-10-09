@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 
-# INTRODUCCION A SOPORTE 
+# Introduccion a soporte 
 
 ## PATRÓN MVC(MODELO-VISTA-CONTROLADOR).
 - *Modelo (Datos).*
