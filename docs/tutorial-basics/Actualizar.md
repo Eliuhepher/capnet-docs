@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 ---
-# ACTUALIZACION DE CAPNET-APPS.
+# Actualizacion de CAPNET-APPS.
 
 ## Dentro de la carpeta de la aplicación. 
 Con el entorno virtual activado (este comando "python -m venv venv" activa el entorno virtual)
