@@ -47,6 +47,7 @@ Para asegurar que el certificado sea reconocido correctamente, se debe combinar 
 4. Utilice la herramienta [SSL Shopper](https://www.sslshopper.com/ssl-checker.html#hostname=capnet.ddns.net:4450) para verificar el estado del certificado.
 
 ![sslShopper](/img/sslShopper.png)
+
 Se observa que el servidor y la cadena están validadas correctamente, así como señala que los certificados intermedios están instalados.
 
 
