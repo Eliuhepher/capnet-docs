@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'CAPITAL NETWORK ',
   tagline: 'Listado De Documentos',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/cn.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -72,12 +72,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/cn.png',
       navbar: {
         title: 'CAPITAL NETWORK',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/cn.png',
         },
         items: [
           {
