@@ -8,9 +8,10 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CAPITAL NETWORK ',
-  tagline: 'Listado De Documentos',
-  favicon: 'img/cn.png',
+  
+  title: 'Capital Network',
+ 
+  favicon: 'img/capLogo.PNG',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -74,7 +75,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/cn.png',
       navbar: {
-        title: 'CAPITAL NETWORK',
+        title: '',
         logo: {
           alt: 'My Site Logo',
           src: 'img/cn.png',
